@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:elcal/elcal.dart' as elcal;
+import 'package:elcal/price_period.dart';
 
 void main(List<String> arguments) {
   var jsonList = jsonDecode(jsonString) as List<dynamic>;
-  var pricePeriods = elcal.PricePeriod.fromJsonList(jsonList);
+  var pricePeriods = PricePeriod.fromJsonList(jsonList);
 
 
 }
